@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Settings"
+    android:background="@color/colorPrimary">
+
+    <EditText
+        android:padding="10dp"
+        android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/round_states"
+        android:hint="Name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="80dp"
+        android:id="@+id/name"
+        android:textAlignment="center"/>
+    <EditText
+        android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+        android:padding="10dp"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/round_states"
+        android:hint="Surname"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/surname"
+        android:textAlignment="center"/>
+
+    <Spinner
+        android:textAlignment="center"
+        android:id="@+id/sex"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown" />
+    <Button
+        android:textColor="#fff"
+        android:background="@drawable/ripple_confirm_button"
+        android:id="@+id/confirmButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        android:layout_gravity="right"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"/>
+</LinearLayout>
